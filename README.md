@@ -8,7 +8,9 @@
 
 ## 使用
 
-配合腾讯云cloudbase可以实现免费搭建bitwarden_rust版本，数据存储在CFS是分离的，docker这边就算消失了数据也不会丢失。并且可以使用CFS快照备份
+配合腾讯云cloudbase可以实现免费搭建bitwarden_rust版本，数据存储在CFS是分离的，docker这边就算消失了数据也不会丢失。并且可以使用CFS快照备份。
+
+如果要提取出sqlite文件的话就有点麻烦。需要创建一个和CFS处于同一子网的CVM（竞价实例好些），然后挂载CFS再取出文件（用Windows服务器就可以了，在CVM中从CFS里面复制到CVM里面然后压缩一下再复制到本地）
 
 ![pic1](pic1.png)
 

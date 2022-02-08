@@ -8,7 +8,7 @@
 
 ## 使用
 
-配合腾讯云cloudbase可以实现免费搭建bitwarden_rust版本，数据存储在CFS是分离的，docker这边就算消失了数据也不会丢失
+配合腾讯云cloudbase可以实现免费搭建bitwarden_rust版本，数据存储在CFS是分离的，docker这边就算消失了数据也不会丢失。并且可以使用CFS快照备份
 
 ![pic1](pic1.png)
 

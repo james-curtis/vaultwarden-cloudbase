@@ -17,6 +17,10 @@
           "policyType": "cpu",
           "policyThreshold": 100,
           "containerPort": 80,
+          "envVariables": {
+            "SIGNUPS_ALLOWED": "true",
+            "INVITATIONS_ALLOWED": "true"
+          },
           "imageInfo": {
             "imageUrl": "vaultwarden/server:latest"
           },

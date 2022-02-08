@@ -9,12 +9,14 @@
 ## 使用
 
 配合腾讯云cloudbase可以实现免费搭建bitwarden_rust版本，数据存储在CFS是分离的，docker这边就算消失了数据也不会丢失
+
+![pic1](pic1.png)
+
 点击下方按钮即可使用
 
 ## 部署
 
 本项目基于腾讯开源项目 [CloudBase Framework](https://github.com/Tencent/cloudbase-framework) [![star](https://img.shields.io/github/stars/Tencent/cloudbase-framework?style=social)](https://github.com/Tencent/cloudbase-framework) 开发部署，支持一键云端部署
-
 
 [![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?&action=CreateAndDeployCloudBaseProject&appUrl=https://github.com/james-curtis/vaultwarden-cloudbase&branch=master)
 
@@ -41,7 +43,7 @@ npx @cloudbase/cli framework deploy -e 环境id
 
 ## 注意事项
 
-1. 部署完毕之后建议关闭注册功能
+1. 部署完毕之后建议关闭注册功能，设置SIGNUPS_ALLOWED为false。修改位置在腾讯云——云开发——云托管——vaultwarden-container——vaultwarden-container-001——配置信息——编辑配置并重新部署——环境变量
 
 ## 文档
 

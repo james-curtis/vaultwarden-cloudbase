@@ -1,0 +1,38 @@
+{
+  "envId": "{{env.ENV_ID}}",
+  "version": "2.0",
+  "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
+  "framework": {
+    "name": "vaultwarden-cloudbase",
+    "plugins": {
+      "client": {
+        "use": "@cloudbase/framework-plugin-container",
+        "inputs": {
+          "serviceName": "vaultwarden-container",
+          "servicePath": "/",
+          "uploadType": "image",
+          "mode": "low-cost",
+          "cpu": 0.25,
+          "mem": 0.5,
+          "policyType": "cpu",
+          "policyThreshold": 100,
+          "containerPort": 80,
+          "imageInfo": {
+            "imageUrl": "vaultwarden/server:latest"
+          },
+          "volumeMounts": {
+            "/data": "vaultwarden-cfs"
+          }
+        }
+      }
+    },
+    "requirement": {
+      "addons": [
+        {
+          "name": "vaultwarden-cfs",
+          "type": "CFS"
+        }
+      ]
+    }
+  }
+}

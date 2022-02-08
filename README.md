@@ -4,7 +4,7 @@
 
 # [Vaultwarden](https://github.com/dani-garcia/vaultwarden)
 
-_用 Rust 编写的非官方 Bitwarden 兼容服务器，以前称为 bitwarden_rs。本项目是vaultwarden的云开发应用版_
+用 Rust 编写的非官方 Bitwarden 兼容服务器，以前称为 bitwarden_rs。本项目是vaultwarden的云开发应用版
 
 ## 使用
 
@@ -19,7 +19,6 @@ _用 Rust 编写的非官方 Bitwarden 兼容服务器，以前称为 bitwarden_
 
 ### 配置
 
-_如果应用安装时有自定义参数需要用户填写，可以声明[环境变量](https://docs.cloudbase.net/framework/config.html#requirement)，同时在下方进行参数的描述_
 
 - SIGNUPS_ALLOWED，默认true 控制新用户是否可以注册
 - INVITATIONS_ALLOWED，默认true 允许管理员邀请用户，即使注册被禁用
@@ -41,8 +40,7 @@ npx @cloudbase/cli framework deploy -e 环境id
 
 ## 注意事项
 
-1. _这里填写注意事项_
-2. _这里填写注意事项_
+1. 部署完毕之后建议关闭注册功能
 
 ## 文档
 
